@@ -1,0 +1,33 @@
+/* Minimal project styles */
+
+:root{
+  --brand-charcoal: #1a202c;
+  --brand-green: #047857;
+}
+
+html,body,#root{
+  height:100%;
+}
+body{
+  margin:0;
+  font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: #ffffff;
+  color: var(--brand-charcoal);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+a{ color: inherit; text-decoration: none }
+
+.container{ max-width: 1200px; margin: 0 auto; }
+
+/* Small tweaks for hero and product grid */
+.hero-image-placeholder{
+  background: linear-gradient(180deg, #f7fafc, #ffffff);
+}
+
+/* Make images cover and be square */
+img{ display:block; max-width:100%; }
+
+/* Footer small print */
+.footer-small{ font-size:12px; color:#6b7280; }
