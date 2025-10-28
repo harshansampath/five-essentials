@@ -27,14 +27,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
           </p>
         </div>
         <p className="mt-1 text-sm text-gray-500">{product.description}</p>
-        <div className="mt-auto pt-4">
-            <button
-            onClick={() => onAddToCart(product)}
-            className="w-full bg-brand-charcoal text-white font-bold py-2 px-4 rounded-md hover:bg-gray-700 transition-colors duration-300"
-            >
-            Add to Cart
-            </button>
-        </div>
+    <div className="mt-auto pt-4">
+      <button
+      onClick={() => onAddToCart(product)}
+      className="w-full btn-primary"
+      aria-label={`Add ${product.name} to cart`}
+      >
+      Add to Cart
+      </button>
+    </div>
       </div>
     </div>
   );
